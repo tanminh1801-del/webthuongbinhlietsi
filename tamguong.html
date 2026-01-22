@@ -6,111 +6,151 @@
     <title>Tấm Gương Liệt Sĩ</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: #f4f6f9;
-            max-width: 100%;
-            margin: 0;
-        }
+    * {
+        box-sizing: border-box;
+    }
 
-        #dieuhuong {
-            width: 100%;
-            height: 60px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: #2d89ef;
-            border-bottom: 3px solid #1b5fbf;
-            display: flex;
-            align-items: center;
-            padding-left: 20px;
-            z-index: 10;
-        }
-        #dieuhuong img {
-            margin-right: 15px;
-            border-radius: 50%;
-        }
-        #dieuhuong ol {
-            margin-left: auto;
-            margin-right: 20px;
-        }
-        #dieuhuong li {
-            display: inline-block;
-            margin: 0 12px;
-        }
-        #dieuhuong a {
-            text-decoration: none;
-            font-weight: bold;
-            color: white;
-            transition: 0.3s;
-            font-size: 17px;
-        }
-        #dieuhuong a:hover {
-            color: #ffeb3b;
-        }
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #f4f6f9;
+        margin: 0;
+    }
 
-        #tieude {
-            margin-top: 60px;
-            background: white;
-            padding: 20px 0;
-            border-bottom: 3px solid #2d89ef;
-            text-align: center;
-            position: sticky;
-            top: 60px;
-            z-index: 5;
-        }
+    /* ===== MENU ===== */
+    #dieuhuong {
+        width: 100%;
+        min-height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #2d89ef;
+        border-bottom: 3px solid #1b5fbf;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        z-index: 10;
+        flex-wrap: wrap;
+    }
 
+    #dieuhuong img {
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    #dieuhuong ol {
+        display: flex;
+        list-style: none;
+        margin-left: auto;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #dieuhuong li {
+        margin: 5px 10px;
+    }
+
+    #dieuhuong a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        font-size: 16px;
+    }
+
+    #dieuhuong a:hover {
+        color: #ffeb3b;
+    }
+
+    /* ===== TIÊU ĐỀ ===== */
+    #tieude {
+        margin-top: 90px;
+        background: white;
+        padding: 15px;
+        border-bottom: 3px solid #2d89ef;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    /* ===== NỘI DUNG ===== */
+    #body {
+        padding: 25px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #body p,
+    #body li {
+        font-size: 17px;
+        line-height: 1.7;
+        padding: 0 10px;
+        text-align: justify;
+    }
+
+    #body ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* ===== HÌNH ẢNH ===== */
+    figure {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #body img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 10px;
+        border: 5px solid #ddd;
+        display: block;
+        margin: auto;
+    }
+
+    figcaption {
+        margin-top: 8px;
+        font-size: 14px;
+        font-style: italic;
+        color: #555;
+    }
+
+    /* ===== FOOTER ===== */
+    #footer {
+        background: #2d89ef;
+        border-top: 5px solid #1b5fbf;
+        width: 100%;
+        height: 60px;
+        margin-top: 40px;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 768px) {
         h1 {
-            margin: 0;
-            font-size: 32px;
+            font-size: 24px;
         }
+
         h2 {
-            text-align: center;
-        }
-        figure {
-            padding: 10px;
-            text-align: center;
-        }
-        figcaption {
-            margin-top: 10px;
-            font-size: 0.9em; 
-            font-style: italic; 
-            color: #555;
-            padding: 5px 0;
+            font-size: 20px;
         }
 
         #body {
-            padding: 50px;
-        }
-        #body p {
-            font-size: 17px;
-            line-height: 1.6;
-            padding: 0 20px;
-        }
-        #body img {
-            width: 30%;
-            border-radius: 10px;
-            margin-top: 20px;
-            border: 5px solid #ddd;
-        }
-        #body ul {
-            list-style: none;
-            padding: 0;
-            margin: 0 20px;
-            text-align: center;
-        }
-        #body li {
-            font-size: 17px;
-            line-height: 1.6;
-            padding: 0 20px;
+            padding: 15px;
         }
 
-        #footer {
-            background: #2d89ef;
-            border-top: 5px solid #1b5fbf;
-            width: 100%;
-            height: 60px;
+        #body p,
+        #body li {
+            font-size: 16px;
         }
+    }
 
     </style>
 </head>

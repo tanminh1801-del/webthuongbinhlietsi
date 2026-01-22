@@ -6,100 +6,129 @@
 	<title>Lời Tri Ân</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+    * {
+        box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: #f4f6f9;
-            max-width: 100%;
-            margin: 0;
-        }
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: #f4f6f9;
+        margin: 0;
+    }
 
-        #dieuhuong {
-            width: 100%;
-            height: 60px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: #2d89ef;
-            border-bottom: 3px solid #1b5fbf;
-            display: flex;
-            align-items: center;
-            padding-left: 20px;
-            z-index: 10;
-        }
-        #dieuhuong img {
-            margin-right: 15px;
-            border-radius: 50%;
-        }
-        #dieuhuong ol {
-            margin-left: auto;
-            margin-right: 20px;
-        }
-        #dieuhuong li {
-            display: inline-block;
-            margin: 0 12px;
-        }
-        #dieuhuong a {
-            text-decoration: none;
-            font-weight: bold;
-            color: white;
-            transition: 0.3s;
-            font-size: 17px;
-        }
-        #dieuhuong a:hover {
-            color: #ffeb3b;
-        }
+    /* ===== MENU ===== */
+    #dieuhuong {
+        width: 100%;
+        min-height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #2d89ef;
+        border-bottom: 3px solid #1b5fbf;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+        z-index: 10;
+        flex-wrap: wrap;
+    }
 
-        #tieude {
-            margin-top: 60px;
-            background: white;
-            padding: 20px 0;
-            border-bottom: 3px solid #2d89ef;
-            text-align: center;
-            position: sticky;
-            top: 60px;
-            z-index: 5;
-        }
+    #dieuhuong img {
+        margin-right: 10px;
+        border-radius: 50%;
+    }
 
+    #dieuhuong ol {
+        display: flex;
+        list-style: none;
+        margin-left: auto;
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #dieuhuong li {
+        margin: 5px 10px;
+    }
+
+    #dieuhuong a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        font-size: 16px;
+    }
+
+    #dieuhuong a:hover {
+        color: #ffeb3b;
+    }
+
+    /* ===== TIÊU ĐỀ ===== */
+    #tieude {
+        margin-top: 90px;
+        background: white;
+        padding: 15px;
+        border-bottom: 3px solid #2d89ef;
+        text-align: center;
+    }
+
+    h1 {
+        margin: 15px 0;
+        font-size: 30px;
+    }
+
+    /* ===== NỘI DUNG ===== */
+    #body {
+        padding: 25px;
+        text-align: center;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #body p,
+    #body li {
+        font-size: 17px;
+        line-height: 1.7;
+        padding: 0 10px;
+    }
+
+    #body img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 10px;
+        margin: 15px auto;
+        display: block;
+        border: 5px solid #ddd;
+    }
+
+    #body ol {
+        list-style: none;
+        padding: 0;
+    }
+
+    /* ===== FOOTER ===== */
+    #footer {
+        background: #2d89ef;
+        border-top: 5px solid #1b5fbf;
+        width: 100%;
+        height: 60px;
+        margin-top: 40px;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 768px) {
         h1 {
-            margin: 0;
-            font-size: 32px;
+            font-size: 24px;
         }
 
         #body {
-            padding: 50px;
-            text-align: center;
+            padding: 15px;
         }
-        #body p {
-            font-size: 17px;
-            line-height: 1.6;
-            padding: 0 20px;
-        }
-        #body img {
-            width: 30%;
-            border-radius: 10px;
-            margin-top: 20px;
-            border: 5px solid #ddd;
-        }
-        #body ol {
-            text-align: center;
-            padding: 0;
-            list-style: none;
-        }
+
+        #body p,
         #body li {
-            font-size: 17px;
-            line-height: 1.6;
-            padding: 0 20px;
+            font-size: 16px;
         }
-
-        #footer {
-            background: #2d89ef;
-            border-top: 5px solid #1b5fbf;
-            width: 100%;
-            height: 60px;
-        }
-
-    </style>
+    }
+ </style>
 </head>
 <body>
 
